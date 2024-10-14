@@ -2,6 +2,7 @@
   position: fixed;
   max-width: 600px;
   margin: 20px auto;
+  margin-top: 80px;
   padding: 20px;
   box-shadow: 0 4px 8px rgb(0, 0, 0, 0.2);
   border-radius: 10px;

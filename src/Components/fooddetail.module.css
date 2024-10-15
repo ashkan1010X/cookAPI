@@ -4,23 +4,37 @@
   margin: 20px auto;
   margin-top: 80px;
   padding: 20px;
-  box-shadow: 0 4px 8px rgb(0, 0, 0, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Slightly increased shadow for depth */
   border-radius: 10px;
-  font-family: Polysans, sans-serif;
+  font-family: "Lora", serif; /* Changed to Lora for elegance */
   color: #393e46;
   overflow: auto;
   max-height: 70vh;
+  background-color: #fff; /* White background for contrast */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for hover effect */
+}
+
+.recipeCard:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
 }
 
 .recipeName {
-  font-size: 24px;
+  font-size: 28px; /* Slightly larger font size */
   margin-bottom: 10px;
+  color: #006d77; /* Primary color for emphasis */
 }
 
 .recipeImage {
+  width: 100%; /* Full width for the image */
   height: auto;
-  border-radius: 5px;
+  border-radius: 10px; /* Increased border radius for a softer look */
   margin-bottom: 10px;
+  transition: transform 0.3s ease; /* Smooth image transition */
+}
+
+.recipeImage:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
 .recipeDetails {
@@ -28,11 +42,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 2px solid #f0f0f0; /* Subtle border below details */
+  padding-bottom: 10px; /* Padding for separation */
 }
 
 .recipeInstructions {
-  padding: 0px;
+  padding: 10px; /* Added padding for comfort */
   border-radius: 5px;
+  background-color: #f8f8f8; /* Light background for instructions */
+  margin-bottom: 20px; /* Added margin for separation */
 }
 
 .recipeInstructions ol {
@@ -41,4 +59,11 @@
 
 .recipeInstructions li {
   margin-left: 10px;
+  padding: 5px; /* Added padding for each list item */
+  border-radius: 20px; /* Rounded corners for list items */
+  transition: background-color 0.4s ease; /* Smooth transition for hover effect */
+}
+
+.recipeInstructions li:hover {
+  background-color: #feffb1; /* Light yellow background on hover */
 }

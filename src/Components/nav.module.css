@@ -1,8 +1,26 @@
 .nav {
-  font-size: 2em;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5em;
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
-  color: #393e46;
-  padding: 30px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 5);
+  color: var(--primary-color);
+  padding: 20px 30px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  background-color: var(--background-color);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  border: 200px solid var(--secondary-color);
+}
+
+/* Food icon styling */
+.nav img {
+  width: 45px;
+  height: 45px;
+}
+
+.nav:hover {
+  color: var(--secondary-color); /* Swap color on hover for effect */
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2); /* Slightly deeper shadow */
 }

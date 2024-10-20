@@ -5,7 +5,7 @@
 }
 
 .input {
-  position: relative; /* Ensure normal flow */
+  position: fixed; /* Ensure normal flow */
   border: none;
   border-bottom: 1px solid #e3e4dc;
   padding: 10px 20px;

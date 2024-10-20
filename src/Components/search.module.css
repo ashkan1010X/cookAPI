@@ -5,11 +5,11 @@
 }
 
 .input {
-  position: relative; /* Change from fixed to relative */
+  position: relative; /* Ensure normal flow */
   border: none;
   border-bottom: 1px solid #e3e4dc;
   padding: 10px 20px;
-  width: 100%;
+  width: 100%; /* Full width within the container */
   outline: none;
   font-size: 17px;
   color: #393e46;
@@ -20,13 +20,14 @@
 @media screen and (max-width: 768px) {
   .searchContainer {
     width: 90%; /* Allow the container to take up more space on mobile */
+    max-width: 90%; /* Ensures it doesn't exceed 90% of screen width */
   }
 
   .input {
-    max-width: 100%; /* Allow input field to stretch to the container width */
     font-size: 16px; /* Slightly smaller font size for mobile */
     padding: 8px 15px; /* Reduce padding to fit mobile view better */
     margin-bottom: 10px; /* Add margin-bottom to separate from other elements */
+    border-bottom: 1px solid #e3e4dc; /* Keep the border specific to the input */
   }
 }
 
@@ -40,5 +41,6 @@
     font-size: 15px; /* Further reduce font size for smaller screens */
     padding: 6px 10px; /* Reduce padding to save space */
     margin-bottom: 10px; /* Add margin-bottom to separate from other elements */
+    border-bottom: 1px solid #e3e4dc; /* Keep the border specific to the input */
   }
 }

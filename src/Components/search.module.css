@@ -1,11 +1,11 @@
 .searchContainer {
   margin: 20px auto;
   width: 300px;
-  position: relative;
+  position: relative; /* Keep this as is */
 }
 
 .input {
-  position: fixed;
+  position: relative; /* Change from fixed to relative */
   border: none;
   border-bottom: 1px solid #e3e4dc;
   padding: 10px 20px;
@@ -26,6 +26,7 @@
     max-width: 100%; /* Allow input field to stretch to the container width */
     font-size: 16px; /* Slightly smaller font size for mobile */
     padding: 8px 15px; /* Reduce padding to fit mobile view better */
+    margin-bottom: 10px; /* Add margin-bottom to separate from other elements */
   }
 }
 
@@ -38,5 +39,6 @@
   .input {
     font-size: 15px; /* Further reduce font size for smaller screens */
     padding: 6px 10px; /* Reduce padding to save space */
+    margin-bottom: 10px; /* Add margin-bottom to separate from other elements */
   }
 }

@@ -15,3 +15,28 @@
   color: #393e46;
   max-width: 300px;
 }
+
+/* Media Queries for Mobile Devices */
+@media screen and (max-width: 768px) {
+  .searchContainer {
+    width: 90%; /* Allow the container to take up more space on mobile */
+  }
+
+  .input {
+    max-width: 100%; /* Allow input field to stretch to the container width */
+    font-size: 16px; /* Slightly smaller font size for mobile */
+    padding: 8px 15px; /* Reduce padding to fit mobile view better */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .searchContainer {
+    width: 100%; /* On very small screens, allow it to take up full width */
+    margin: 10px auto; /* Reduce margin for smaller screens */
+  }
+
+  .input {
+    font-size: 15px; /* Further reduce font size for smaller screens */
+    padding: 6px 10px; /* Reduce padding to save space */
+  }
+}

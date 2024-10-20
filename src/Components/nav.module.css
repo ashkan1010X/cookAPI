@@ -21,6 +21,34 @@
 }
 
 .nav:hover {
-  color: var(--secondary-color); /* Swap color on hover for effect */
-  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2); /* Slightly deeper shadow */
+  color: var(--secondary-color);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries for Mobile Devices */
+@media screen and (max-width: 768px) {
+  .nav {
+    font-size: 1.8em; /* Reduce font size for smaller screens */
+    padding: 15px 20px; /* Reduce padding for mobile */
+    border-width: 150px; /* Reduce border width for a better fit */
+    gap: 10px; /* Decrease gap between items */
+  }
+
+  .nav img {
+    width: 35px; /* Reduce icon size */
+    height: 35px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav {
+    font-size: 1.5em; /* Further reduce font size for very small screens */
+    padding: 10px 15px; /* Further reduce padding */
+    border-width: 100px; /* Make border smaller for tiny screens */
+  }
+
+  .nav img {
+    width: 30px; /* Further reduce icon size */
+    height: 30px;
+  }
 }

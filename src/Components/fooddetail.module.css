@@ -67,3 +67,47 @@
 .recipeInstructions li:hover {
   background-color: #feffb1; /* Light yellow background on hover */
 }
+/* Media Queries for Mobile Devices */
+@media screen and (max-width: 768px) {
+  .recipeCard {
+    max-width: 90%; /* Reduce width for tablets */
+    margin: 10px;
+    margin-top: 60px;
+    padding: 15px;
+  }
+
+  .recipeName {
+    font-size: 24px; /* Smaller font size */
+  }
+
+  .recipeDetails {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start;
+  }
+
+  .recipeInstructions {
+    padding: 5px; /* Reduce padding */
+    margin-bottom: 10px; /* Smaller margin */
+  }
+
+  .recipeInstructions li {
+    margin-left: 0px;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .recipeCard {
+    max-width: 95%; /* Further reduce width for small mobile devices */
+    margin-top: 40px;
+    padding: 10px;
+  }
+
+  .recipeName {
+    font-size: 20px; /* Smaller font size for small screens */
+  }
+
+  .recipeDetails {
+    border-bottom: none; /* Remove the border */
+  }
+}

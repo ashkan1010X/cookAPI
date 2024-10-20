@@ -65,3 +65,41 @@
   justify-content: center;
   text-align: center;
 }
+
+/* Media Queries for Mobile Devices */
+@media screen and (max-width: 768px) {
+  .itemContainer {
+    width: 90%; /* Make item container take up more space on mobile */
+    margin: 10px auto; /* Center and reduce margin on smaller screens */
+    transform: none; /* Disable translation on hover for mobile */
+  }
+
+  .itemContainer:hover {
+    transform: none; /* No horizontal sliding on mobile hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Keep consistent shadow */
+  }
+
+  .itemName {
+    font-size: 1.1em; /* Slightly reduce the font size for smaller screens */
+  }
+
+  .itemButton {
+    width: 100%; /* Make buttons full-width for mobile */
+    padding: 10px 0; /* Adjust padding */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .itemContainer {
+    width: 95%; /* Further reduce width for smaller devices */
+    margin: 5px auto;
+  }
+
+  .itemName {
+    font-size: 1em; /* Reduce font size for small mobile */
+  }
+
+  .itemButton {
+    padding: 8px 0; /* Further reduce padding on small screens */
+  }
+}

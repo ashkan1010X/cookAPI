@@ -3,3 +3,18 @@
   padding: 10px;
   margin: 10px;
 }
+
+/* Media Queries for Mobile Devices */
+@media screen and (max-width: 768px) {
+  .innerContainer {
+    padding: 5px; /* Reduce padding for smaller screens */
+    margin: 5px; /* Adjust margin for more compact spacing */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .innerContainer {
+    padding: 2px; /* Further reduce padding for very small screens */
+    margin: 2px; /* Reduce margin to save space */
+  }
+}

@@ -6,6 +6,7 @@ import ItemList from "./ItemList";
 export default function FoodDetail({ foodID }) {
   const URL = `https://api.spoonacular.com/recipes/${foodID}/information`;
   const API_KEY = import.meta.env.VITE_API_KEY;
+
   const [foodInfo, setFoodInfo] = useState({});
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {

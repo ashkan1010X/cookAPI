@@ -24,6 +24,7 @@
   }
 
   .input {
+    position: relative;
     font-size: 16px; /* Slightly smaller font size for mobile */
     padding: 8px 15px; /* Reduce padding to fit mobile view better */
     margin-bottom: 10px; /* Add margin-bottom to separate from other elements */
@@ -38,6 +39,7 @@
   }
 
   .input {
+    position: relative;
     font-size: 15px; /* Further reduce font size for smaller screens */
     padding: 6px 10px; /* Reduce padding to save space */
     margin-bottom: 10px; /* Add margin-bottom to separate from other elements */

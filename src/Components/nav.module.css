@@ -8,8 +8,8 @@
   background-color: var(--background-color);
   border-radius: 10px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: center; /* Vertically centers items */
+  justify-content: center; /* Horizontally centers items */
   gap: 15px;
   border: 200px solid var(--secondary-color);
 }
@@ -32,6 +32,7 @@
     padding: 15px 20px; /* Reduce padding for mobile */
     border-width: 150px; /* Reduce border width for a better fit */
     gap: 10px; /* Decrease gap between items */
+    text-align: center; /* Center text for mobile */
   }
 
   .nav img {
@@ -45,6 +46,7 @@
     font-size: 1.5em; /* Further reduce font size for very small screens */
     padding: 10px 15px; /* Further reduce padding */
     border-width: 100px; /* Make border smaller for tiny screens */
+    text-align: center; /* Center text for very small screens */
   }
 
   .nav img {

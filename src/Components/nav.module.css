@@ -12,9 +12,6 @@
   justify-content: center; /* Horizontally centers items */
   gap: 15px;
   border: 200px solid var(--secondary-color);
-  margin: 0;
-  padding: 0;
-  width: 100vw;
 }
 
 /* Food icon styling */

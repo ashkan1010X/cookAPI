@@ -1,5 +1,4 @@
 import styles from "./fooddetail.module.css";
-
 import { useEffect, useState } from "react";
 import ItemList from "./ItemList";
 
@@ -8,17 +7,19 @@ export default function FoodDetail({ foodID }) {
   const API_KEY = import.meta.env.VITE_API_KEY;
 
   const [foodInfo, setFoodInfo] = useState({});
-  const [isLoading, setIsLoading] = useState(true);
+
   useEffect(() => {
     async function fetchFoodData() {
       const res = await fetch(`${URL}?apiKey=${API_KEY}`);
       const data = await res.json();
       console.log(data);
       setFoodInfo(data);
-      setIsLoading(false);
     }
     fetchFoodData();
   }, [foodID]);
+
+  if (!foodInfo.title) return null; // Render nothing until the API call has fetched the data
+
   return (
     <div>
       <div className={styles.recipeCard}>
@@ -44,19 +45,15 @@ export default function FoodDetail({ foodID }) {
           $
           <span>{(foodInfo.pricePerServing / 100).toFixed(2)} Per serving</span>
         </div>
-        <h2> Ingredients</h2>
-        <ItemList foodInfo={foodInfo} isLoading={isLoading} />
+        <h2>Ingredients</h2>
+        <ItemList foodInfo={foodInfo} />
         <h2 className={styles.directions}>Directions</h2>
         <div className={styles.recipeInstructions}>
-          {isLoading ? (
-            <p>Loading...</p>
-          ) : (
-            <ol>
-              {foodInfo.analyzedInstructions[0].steps.map((step, idx) => (
-                <li key={idx}>{step.step}</li>
-              ))}
-            </ol>
-          )}
+          <ol>
+            {foodInfo.analyzedInstructions[0]?.steps.map((step, idx) => (
+              <li key={idx}>{step.step}</li>
+            ))}
+          </ol>
         </div>
       </div>
     </div>

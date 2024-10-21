@@ -1,11 +1,9 @@
 import Item from "./Item";
 
-export default function ItemList({ foodInfo, isLoading }) {
+export default function ItemList({ foodInfo }) {
   return (
     <div>
-      {isLoading ? (
-        <p>Loading ...</p>
-      ) : foodInfo.extendedIngredients ? (
+      {foodInfo.extendedIngredients ? (
         foodInfo.extendedIngredients.map((item, idx) => (
           <Item key={idx} item={item} />
         ))

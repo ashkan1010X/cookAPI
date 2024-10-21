@@ -8,7 +8,7 @@ export default function FoodDetail({ foodID }) {
 
   const [foodInfo, setFoodInfo] = useState({});
 
-  const detailRef = useRef(null); // Create a ref for the container
+  const detailRef = useRef(null); // ref for the container
 
   useEffect(() => {
     async function fetchFoodData() {

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import styles from "./leavesAnimation.module.css";
+import styles from "./leavesanimation.module.css";
 
 export default function LeavesAnimation() {
   const leaves = Array(10).fill(0); // Array to render multiple leaves

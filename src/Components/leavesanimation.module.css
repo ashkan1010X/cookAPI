@@ -138,6 +138,9 @@
   .leaf {
     width: 30px; /* Make leaves smaller on mobile */
   }
+  .monster {
+    width: 25px; /* Make monsters smaller on mobile */
+  }
 
   /* Set unique animation durations for each leaf */
   .leaf1 {

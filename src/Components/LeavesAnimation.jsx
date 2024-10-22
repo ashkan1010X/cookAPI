@@ -16,7 +16,7 @@ export default function LeavesAnimation() {
     <div className={styles.leavesContainer}>
       {leaves.map((_, index) => (
         <img
-          src={`/public/leaves/leaf${index + 1}.png`}
+          src={`/leaves/leaf${index + 1}.png`}
           key={index}
           alt="leaf"
           className={`${styles.leaf} ${styles[`leaf${index + 1}`]}`}

@@ -93,19 +93,44 @@
     width: 30px; /* Make leaves smaller on mobile */
   }
 
-  .leaf1,
-  .leaf2,
-  .leaf3,
-  .leaf4,
-  .leaf5 {
-    animation-duration: 8s; /* Speed up animation for smaller leaves */
+  /* Set unique animation durations for each leaf */
+  .leaf1 {
+    animation-duration: 6s; /* Adjust duration for mobile */
   }
 
-  .leaf6,
-  .leaf7,
-  .leaf8,
-  .leaf9,
+  .leaf2 {
+    animation-duration: 7s; /* Adjust duration for mobile */
+  }
+
+  .leaf3 {
+    animation-duration: 5s; /* Adjust duration for mobile */
+  }
+
+  .leaf4 {
+    animation-duration: 8s; /* Adjust duration for mobile */
+  }
+
+  .leaf5 {
+    animation-duration: 9s; /* Adjust duration for mobile */
+  }
+
+  .leaf6 {
+    animation-duration: 7s; /* Adjust duration for mobile */
+  }
+
+  .leaf7 {
+    animation-duration: 6s; /* Adjust duration for mobile */
+  }
+
+  .leaf8 {
+    animation-duration: 8s; /* Adjust duration for mobile */
+  }
+
+  .leaf9 {
+    animation-duration: 5s; /* Adjust duration for mobile */
+  }
+
   .leaf10 {
-    animation-duration: 12s; /* Adjust animation for more leaves */
+    animation-duration: 9s; /* Adjust duration for mobile */
   }
 }

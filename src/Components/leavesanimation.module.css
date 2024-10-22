@@ -9,6 +9,17 @@
   }
 }
 
+@keyframes fallNoRotate {
+  0% {
+    transform: translateY(-100vh);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0.5;
+  }
+}
+
 .leavesContainer {
   position: fixed;
   top: 0;
@@ -87,6 +98,41 @@
   animation-delay: 0s; /* Start falling immediately */
 }
 
+.monstersContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Prevent interaction with the falling monsters */
+  overflow: hidden;
+  z-index: 9999; /* Make sure it's behind all other content */
+}
+.monster {
+  position: absolute;
+  width: 50px; /* Adjust the size of the monster */
+  height: auto;
+  animation: fall linear infinite;
+}
+
+.monster1 {
+  left: 55%;
+  animation-duration: 16s; /* Adjust for speed */
+  animation-delay: 0s; /* Start falling immediately */
+}
+.monster2 {
+  left: 25%;
+  animation-duration: 17s; /* Adjust for speed */
+  animation-delay: 0s; /* Start falling immediately */
+  animation: fallNoRotate 15s linear infinite;
+}
+.monster3 {
+  left: 85%;
+  animation-duration: 15s; /* Adjust for speed */
+  animation-delay: 0s; /* Start falling immediately */
+  animation: fallNoRotate 15s linear infinite;
+}
+
 /* Media Queries for Mobile Devices */
 @media screen and (max-width: 768px) {
   .leaf {
@@ -96,6 +142,10 @@
   /* Set unique animation durations for each leaf */
   .leaf1 {
     animation-duration: 6s; /* Adjust duration for mobile */
+  }
+
+  .monster2 {
+    animation-duration: 17s; /* Adjust duration for mobile */
   }
 
   .leaf2 {

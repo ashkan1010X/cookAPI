@@ -1,15 +1,15 @@
 .searchContainer {
   margin: 20px auto;
   width: 300px;
-  position: relative; /* Keep this as is */
+  position: relative;
 }
 
 .input {
-  position: fixed; /* Ensure normal flow */
+  position: fixed;
   border: none;
   border-bottom: 1px solid #e3e4dc;
   padding: 10px 20px;
-  width: 100%; /* Full width within the container */
+  width: 100%;
   outline: none;
   font-size: 17px;
   color: #393e46;
@@ -19,30 +19,30 @@
 /* Media Queries for Mobile Devices */
 @media screen and (max-width: 768px) {
   .searchContainer {
-    width: 90%; /* Allow the container to take up more space on mobile */
-    max-width: 90%; /* Ensures it doesn't exceed 90% of screen width */
+    width: 90%;
+    max-width: 90%;
   }
 
   .input {
     position: relative;
-    font-size: 16px; /* Slightly smaller font size for mobile */
-    padding: 8px 15px; /* Reduce padding to fit mobile view better */
-    margin-bottom: 10px; /* Add margin-bottom to separate from other elements */
-    border-bottom: 1px solid #e3e4dc; /* Keep the border specific to the input */
+    font-size: 16px;
+    padding: 8px 15px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e3e4dc;
   }
 }
 
 @media screen and (max-width: 480px) {
   .searchContainer {
-    width: 100%; /* On very small screens, allow it to take up full width */
-    margin: 10px auto; /* Reduce margin for smaller screens */
+    width: 100%;
+    margin: 10px auto;
   }
 
   .input {
     position: relative;
-    font-size: 15px; /* Further reduce font size for smaller screens */
-    padding: 6px 10px; /* Reduce padding to save space */
-    margin-bottom: 10px; /* Add margin-bottom to separate from other elements */
-    border-bottom: 1px solid #e3e4dc; /* Keep the border specific to the input */
+    font-size: 15px;
+    padding: 6px 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e3e4dc;
   }
 }

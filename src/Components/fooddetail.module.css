@@ -4,37 +4,37 @@
   margin: 20px auto;
   margin-top: 80px;
   padding: 20px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Slightly increased shadow for depth */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  font-family: "Lora", serif; /* Changed to Lora for elegance */
+  font-family: "Lora", serif;
   color: #393e46;
   overflow: auto;
   max-height: 70vh;
-  background-color: #fff; /* White background for contrast */
-  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for hover effect */
+  background-color: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .recipeCard:hover {
-  transform: translateY(-5px); /* Slight lift on hover */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .recipeName {
-  font-size: 28px; /* Slightly larger font size */
+  font-size: 28px;
   margin-bottom: 10px;
-  color: #006d77; /* Primary color for emphasis */
+  color: #006d77;
 }
 
 .recipeImage {
-  width: 100%; /* Full width for the image */
+  width: 100%;
   height: auto;
-  border-radius: 10px; /* Increased border radius for a softer look */
+  border-radius: 10px;
   margin-bottom: 10px;
-  transition: transform 0.3s ease; /* Smooth image transition */
+  transition: transform 0.3s ease;
 }
 
 .recipeImage:hover {
-  transform: scale(1.05); /* Slight zoom effect on hover */
+  transform: scale(1.05);
 }
 
 .recipeDetails {
@@ -42,15 +42,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid #f0f0f0; /* Subtle border below details */
-  padding-bottom: 10px; /* Padding for separation */
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 10px;
 }
 
 .recipeInstructions {
-  padding: 10px; /* Added padding for comfort */
+  padding: 10px;
   border-radius: 5px;
-  background-color: #f8f8f8; /* Light background for instructions */
-  margin-bottom: 20px; /* Added margin for separation */
+  background-color: #f8f8f8;
+  margin-bottom: 20px;
 }
 
 .recipeInstructions ol {
@@ -59,29 +59,29 @@
 
 .recipeInstructions li {
   margin-left: 10px;
-  padding: 5px; /* Added padding for each list item */
-  border-radius: 20px; /* Rounded corners for list items */
-  transition: background-color 0.4s ease; /* Smooth transition for hover effect */
+  padding: 5px;
+  border-radius: 20px;
+  transition: background-color 0.4s ease;
 }
 
 .recipeInstructions li:hover {
-  background-color: #feffb1; /* Light yellow background on hover */
+  background-color: #feffb1;
 }
 /* Media Queries for Mobile Devices */
 @media screen and (max-width: 768px) {
   .recipeCard {
-    max-width: 90%; /* Reduce width for tablets */
+    max-width: 90%;
     margin: 10px;
     margin-top: 60px;
     padding: 15px;
   }
 
   .recipeName {
-    font-size: 24px; /* Smaller font size */
+    font-size: 24px;
   }
 
   .recipeDetails {
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column;
     align-items: flex-start;
   }
 
@@ -108,6 +108,6 @@
   }
 
   .recipeDetails {
-    border-bottom: none; /* Remove the border */
+    border-bottom: none;
   }
 }

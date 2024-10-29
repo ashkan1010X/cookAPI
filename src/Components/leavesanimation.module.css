@@ -26,76 +26,76 @@
   left: 0;
   width: 100%;
   height: 100%;
-  pointer-events: none; /* Prevent interaction with the falling leaves */
+  pointer-events: none;
   overflow: hidden;
-  z-index: 9999; /* Make sure it's behind all other content */
+  z-index: 9999;
 }
 
 .leaf {
   position: absolute;
-  width: 50px; /* Adjust the size of the leaf */
+  width: 50px;
   height: auto;
   animation: fall linear infinite;
 }
 
 .leaf1 {
   left: 10%;
-  animation-duration: 9s; /* Adjust for speed */
-  animation-delay: 0s; /* Start falling immediately */
+  animation-duration: 9s;
+  animation-delay: 0s;
 }
 
 .leaf2 {
   left: 20%;
-  animation-duration: 10s; /* Adjust for speed */
-  animation-delay: 0s; /* Start falling immediately */
+  animation-duration: 10s;
+  animation-delay: 0s;
 }
 
 .leaf3 {
   left: 30%;
-  animation-duration: 9s; /* Adjust for speed */
-  animation-delay: 0s; /* Start falling immediately */
+  animation-duration: 9s;
+  animation-delay: 0s;
 }
 
 .leaf4 {
   left: 40%;
-  animation-duration: 11s; /* Adjust for speed */
-  animation-delay: 0s; /* Start falling immediately */
+  animation-duration: 11s;
+  animation-delay: 0s;
 }
 
 .leaf5 {
   left: 50%;
-  animation-duration: 12s; /* Adjust for speed */
-  animation-delay: 0s; /* Start falling immediately */
+  animation-duration: 12s;
+  animation-delay: 0s;
 }
 
 .leaf6 {
   left: 60%;
-  animation-duration: 10s; /* Adjust for speed */
-  animation-delay: 0s; /* Start falling immediately */
+  animation-duration: 10s;
+  animation-delay: 0s;
 }
 
 .leaf7 {
   left: 70%;
-  animation-duration: 9s; /* Adjust for speed */
-  animation-delay: 0s; /* Start falling immediately */
+  animation-duration: 9s;
+  animation-delay: 0s;
 }
 
 .leaf8 {
   left: 80%;
-  animation-duration: 11s; /* Adjust for speed */
-  animation-delay: 0s; /* Start falling immediately */
+  animation-duration: 11s;
+  animation-delay: 0s;
 }
 
 .leaf9 {
   left: 90%;
-  animation-duration: 10s; /* Adjust for speed */
-  animation-delay: 0s; /* Start falling immediately */
+  animation-duration: 10s;
+  animation-delay: 0s;
 }
 
 .leaf10 {
   left: 95%;
-  animation-duration: 8s; /* Adjust for speed */
-  animation-delay: 0s; /* Start falling immediately */
+  animation-duration: 8s;
+  animation-delay: 0s;
 }
 
 .monstersContainer {
@@ -104,86 +104,85 @@
   left: 0;
   width: 100%;
   height: 100%;
-  pointer-events: none; /* Prevent interaction with the falling monsters */
+  pointer-events: none;
   overflow: hidden;
-  z-index: 9999; /* Make sure it's behind all other content */
+  z-index: 9999;
 }
 .monster {
   position: absolute;
-  width: 50px; /* Adjust the size of the monster */
+  width: 50px;
   height: auto;
   animation: fall linear infinite;
 }
 
 .monster1 {
   left: 55%;
-  animation-duration: 16s; /* Adjust for speed */
-  animation-delay: 0s; /* Start falling immediately */
+  animation-duration: 16s;
+  animation-delay: 0s;
 }
 .monster2 {
   left: 25%;
-  animation-duration: 17s; /* Adjust for speed */
-  animation-delay: 0s; /* Start falling immediately */
+  animation-duration: 17s;
+  animation-delay: 0s;
   animation: fallNoRotate 15s linear infinite;
 }
 .monster3 {
   left: 85%;
-  animation-duration: 15s; /* Adjust for speed */
-  animation-delay: 0s; /* Start falling immediately */
+  animation-duration: 15s;
+  animation-delay: 0s;
   animation: fallNoRotate 15s linear infinite;
 }
 
 /* Media Queries for Mobile Devices */
 @media screen and (max-width: 768px) {
   .leaf {
-    width: 30px; /* Make leaves smaller on mobile */
+    width: 30px;
   }
   .monster {
-    width: 25px; /* Make monsters smaller on mobile */
+    width: 25px;
   }
 
-  /* Set unique animation durations for each leaf */
   .leaf1 {
-    animation-duration: 6s; /* Adjust duration for mobile */
+    animation-duration: 6s;
   }
 
   .monster2 {
-    animation-duration: 17s; /* Adjust duration for mobile */
+    animation-duration: 17s;
   }
 
   .leaf2 {
-    animation-duration: 7s; /* Adjust duration for mobile */
+    animation-duration: 7s;
   }
 
   .leaf3 {
-    animation-duration: 5s; /* Adjust duration for mobile */
+    animation-duration: 5s;
   }
 
   .leaf4 {
-    animation-duration: 8s; /* Adjust duration for mobile */
+    animation-duration: 8s;
   }
 
   .leaf5 {
-    animation-duration: 9s; /* Adjust duration for mobile */
+    animation-duration: 9s;
   }
 
   .leaf6 {
-    animation-duration: 7s; /* Adjust duration for mobile */
+    animation-duration: 7s;
   }
 
   .leaf7 {
-    animation-duration: 6s; /* Adjust duration for mobile */
+    animation-duration: 6s;
   }
 
   .leaf8 {
-    animation-duration: 8s; /* Adjust duration for mobile */
+    animation-duration: 8s;
   }
 
   .leaf9 {
-    animation-duration: 5s; /* Adjust duration for mobile */
+    animation-duration: 5s;
   }
 
   .leaf10 {
-    animation-duration: 9s; /* Adjust duration for mobile */
+    animation-duration: 9s;
   }
 }

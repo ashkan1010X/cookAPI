@@ -19,6 +19,7 @@ export default function FoodDetail({ foodID }) {
     fetchFoodData();
 
     // Scroll to top when foodID changes
+
     if (detailRef.current) {
       detailRef.current.scrollTop = 0;
     }

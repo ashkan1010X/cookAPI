@@ -35,43 +35,43 @@
 /* Media Queries for Mobile Devices */
 @media screen and (max-width: 768px) {
   .itemContainer {
-    flex-direction: column; /* Stack image and text vertically on smaller screens */
-    align-items: center; /* Center the content */
-    padding: 5px; /* Reduce padding */
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
   }
 
   .imageContainer {
-    width: 80px; /* Reduce image size for smaller screens */
+    width: 80px;
     height: 80px;
-    margin-bottom: 10px; /* Add spacing between image and text when stacked */
+    margin-bottom: 10px;
   }
 
   .nameContainer {
-    margin-left: 0; /* Remove left margin since the content will be stacked */
-    text-align: center; /* Center text for mobile */
+    margin-left: 0;
+    text-align: center;
   }
 
   .name {
-    font-size: 1.2em; /* Slightly reduce font size for mobile */
+    font-size: 1.2em;
   }
 
   .amount {
-    margin-top: 5px; /* Reduce spacing for smaller screens */
+    margin-top: 5px;
   }
 }
 
 @media screen and (max-width: 480px) {
   .itemContainer {
     padding: 3px;
-    margin-top: 30px; /* Reduce top margin for small devices */
+    margin-top: 30px;
   }
 
   .imageContainer {
-    width: 60px; /* Further reduce image size */
+    width: 60px;
     height: 60px;
   }
 
   .name {
-    font-size: 1em; /* Reduce font size for very small screens */
+    font-size: 1em;
   }
 }

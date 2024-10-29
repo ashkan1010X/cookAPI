@@ -6,7 +6,7 @@ import "./App.css";
 import Container from "./Components/Container";
 import InnerContainer from "./Components/InnerContainer";
 import FoodDetail from "./Components/FoodDetailComponent";
-import LeavesAnimation from "./Components/LeavesAnimation"; // Import the LeavesAnimation
+import LeavesAnimation from "./Components/LeavesAnimation";
 
 function App() {
   const [foodData, setFoodData] = useState([]);
@@ -15,7 +15,7 @@ function App() {
   return (
     <div>
       <Nav />
-      <LeavesAnimation /> {/* Add the Leaves Animation */}
+      <LeavesAnimation />
       <Search foodData={foodData} setFoodData={setFoodData} />
       <Container>
         <InnerContainer>

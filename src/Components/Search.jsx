@@ -9,7 +9,6 @@ export default function Search({ foodData, setFoodData }) {
   useEffect(() => {
     const handler = setTimeout(() => {
       if (query) {
-        // Only make the request if the query isn't empty
         async function fetchFood() {
           const res = await fetch(`${URL}?query=${query}&apiKey=${API_KEY}`);
           const data = await res.json();
@@ -18,11 +17,10 @@ export default function Search({ foodData, setFoodData }) {
         }
         fetchFood();
       }
-    }, 300); // 500ms delay for debouncing
+    }, 300);
 
-    // Cleanup timeout if query changes before the timeout finishes
     return () => clearTimeout(handler);
-  }, [query]); // Re-run effect only when query changes
+  }, [query]);
 
   return (
     <div className={styles.searchContainer}>

@@ -8,13 +8,12 @@
   background-color: var(--background-color);
   border-radius: 10px;
   display: flex;
-  align-items: center; /* Vertically centers items */
-  justify-content: center; /* Horizontally centers items */
+  align-items: center;
+  justify-content: center;
   gap: 15px;
   border: 200px solid var(--secondary-color);
 }
 
-/* Food icon styling */
 .nav img {
   width: 45px;
   height: 45px;
@@ -28,29 +27,24 @@
 /* Media Queries for Mobile Devices */
 @media screen and (max-width: 768px) {
   .nav {
-    font-size: 1.8em; /* Reduce font size for smaller screens */
-    padding: 15px 20px; /* Reduce padding for mobile */
-    border-width: 150px; /* Reduce border width for a better fit */
-    gap: 10px; /* Decrease gap between items */
-    text-align: center; /* Center text for mobile */
-  }
-
-  .nav img {
-    width: 35px; /* Reduce icon size */
-    height: 35px;
+    font-size: 1.8em;
+    padding: 15px 20px;
+    border-width: 150px;
+    gap: 10px;
+    text-align: center;
   }
 }
 
 @media screen and (max-width: 480px) {
   .nav {
-    font-size: 1.5em; /* Further reduce font size for very small screens */
-    padding: 10px 15px; /* Further reduce padding */
-    border-width: 100px; /* Make border smaller for tiny screens */
-    text-align: center; /* Center text for very small screens */
+    font-size: 1.5em;
+    padding: 10px 15px;
+    border-width: 100px;
+    text-align: center;
   }
 
   .nav img {
-    width: 30px; /* Further reduce icon size */
+    width: 30px;
     height: 30px;
   }
 }

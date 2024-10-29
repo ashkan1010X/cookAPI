@@ -3,20 +3,20 @@ body {
   padding: 0;
   background-color: var(--background-color);
   color: var(--primary-color);
-  /* Ensures that the layout doesn't shrink too small on mobile */
+
   min-width: 320px;
 }
 
 @media screen and (max-width: 768px) {
   body {
-    font-size: 16px; /* Slightly smaller font size for better readability on smaller screens */
-    padding: 0 15px; /* Add some padding to prevent elements from touching the edge */
+    font-size: 16px;
+    padding: 0 15px;
   }
 }
 
 @media screen and (max-width: 480px) {
   body {
-    font-size: 14px; /* Further reduce font size for very small screens */
+    font-size: 14px;
     padding: 0 10px;
   }
 }
